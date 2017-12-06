@@ -1,9 +1,7 @@
-pipeline {
-  podTemplate(label: 'mypod') {
-      node('mypod') {
-          stage('Run shell') {
-              sh 'echo hello world'
-          }
-      }
-  }
-}
+ podTemplate(label: 'mypod') {
+     node('mypod') {
+         stage('Run shell') {
+             sh 'echo hello world'
+         }
+     }
+ }
